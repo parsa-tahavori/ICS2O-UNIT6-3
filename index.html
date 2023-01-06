@@ -29,12 +29,7 @@
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
       />
     </noscript>
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
-      media="none"
-      onload="if(media!='all')media='all'"
-    />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-orange.min.css" />
     <noscript>
       <link
         rel="stylesheet"
@@ -49,31 +44,16 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
+    <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">weather</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
-        <p></p>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
-        </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="hello-world"></div>
+        <div id="api-weather-icon"></div>
+        <div id="api-weather"></div>
       </main>
     </div>
   </body>
